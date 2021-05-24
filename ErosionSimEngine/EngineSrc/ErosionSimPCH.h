@@ -12,10 +12,9 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#include "EngineSrc/Core/Core.h"
-#include "EngineSrc/Core/Logging/Log.h"
-#include "EngineSrc/Core/Debug/Instrumentor.h"
-//#include "ES/Core/EntryPoint.h"
+#include "Eros/Core/Base.h"
+#include "Eros/Core/Logging/Log.h"
+#include "Eros/Core/Debug/Instrumentor.h"
 
 #ifdef EROSIONSIM_PLATFORM_WINDOWS
 	#include <Windows.h>

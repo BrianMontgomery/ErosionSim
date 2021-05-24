@@ -1,24 +1,24 @@
 #include <ErosionSimEngine.h>
-#include <EngineSrc/Core/EntryPoint.h>
+#include <Eros/Core/EntryPoint.h>
 
-//#include "ErosionSimAppLayer/ErosionSimAppLayer.h"
-//#include "ExampleLayer.h"
-
-/*class ErosionSimApp : public Application
-{
-public:
-	ErosionSimApp()
+//#include "EditorLayer.h"
+namespace Eros {
+	class ErosionSim : public Application
 	{
-		//PushLayer(new ErosionSimAppLayer());
-		//PushLayer(new Sandbox2D());
-	}
+	public:
+		ErosionSim(ApplicationCommandLineArgs args)
+			: Application("ErosionSim", args)
+		{
+			//PushLayer(new EditorLayer());
+		}
 
-	~ErosionSimApp()
+		~ErosionSim()
+		{
+		}
+	};
+
+	Application* CreateApplication(ApplicationCommandLineArgs args)
 	{
+		return new ErosionSim(args);
 	}
-};
-
-Application* CreateApplication()
-{
-	return new ErosionSimApp();
-}*/
+}
